@@ -35,6 +35,6 @@ function getMySalary(item) {
       mySalary['taxes'] = Number(taxes);
       mySalary['profit'] = profit;
       return console.log(mySalary);
-   }, 1100)
+   }, 10000)
 }
-getMySalary(ukraine)
+getMySalary(litva)
