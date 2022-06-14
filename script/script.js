@@ -25,16 +25,16 @@ function getTotalTaxes() {
 getTotalTaxes.call(ukraine);
 
 //Функція яка буде писати в консоль об'єкт  
-function getMySalary() {
+function getMySalary(item) {
    let mySalary = {}
-   let interval = setInterval(() => {
+   setInterval(() => {
       let salary = Math.floor(Math.random() * (2001 - 1500) + 1500);
-      let taxes = (this.tax * salary).toFixed(0);
+      let taxes = (item.tax * salary).toFixed(0);
       let profit = salary - taxes;
       mySalary['salary'] = salary;
       mySalary['taxes'] = Number(taxes);
       mySalary['profit'] = profit;
       return console.log(mySalary);
-   }, 10000)
+   }, 1100)
 }
-getMySalary.call(latvia)
+getMySalary(ukraine)
